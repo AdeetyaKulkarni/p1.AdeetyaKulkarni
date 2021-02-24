@@ -112,6 +112,24 @@ class Clock{
     this.Start_Timer();
   }
   
+  void addThirty(){
+    sec += 30;
+     //Reset sec, min to correct vals
+    if(sec > 60){
+      sec = sec - 60;
+      min = min+1;
+    }   
+    if(min > 60)
+    {
+      min = min - 60;
+      hr = hr + 1;
+    }    
+    if(hr > 24){
+      hr = 24;
+    }
+    
+  }
+  
   
 }
 
@@ -178,6 +196,10 @@ void stopClock(){
   myClock.timer_status = 0;
 }
 
+void addThirty(){
+  myClock.addThirty();
+}
+
 void setup(){
 
     size(500, 950);
@@ -207,12 +229,14 @@ void setup(){
     stopBtn = new ControlP5(this);
     pauseBtn = new ControlP5(this);
     resumeBtn = new ControlP5(this);
+    addThirtyBtn = new ControlP5(this);
     startBtn.addButton("Start").setSize(100,80).setPosition(100, 750).plugTo(this, "startClock");
     clearBtn.addButton("Clear").setSize(100,80).setPosition(300, 750).plugTo(this, "clearClock");
     pauseBtn.addButton("Pause").setSize(100,80).setPosition(100, 750).plugTo(this, "pauseClock");
     resumeBtn.addButton("Resume").setSize(100,80).setPosition(100, 750).plugTo(this, "resumeClock");
     stopBtn.addButton("Stop").setSize(100,80).setPosition(300, 750).plugTo(this, "stopClock");
-    
+    addThirtyBtn.addButton("Add 30 sec").setSize(100,80).setPosition(200, 600).plugTo(this, "addThirty");
+
     
 }
 
@@ -244,10 +268,13 @@ void draw(){
      pauseBtn.hide();
      stopBtn.hide();
      resumeBtn.hide();
+     addThirtyBtn.hide();
    }
    else if(myClock.timer_status == -1){
      pauseBtn.hide();
+     addThirtyBtn.hide();
      resumeBtn.show();
+     
    }
    else if(myClock.timer_status == 1){
      for(int i =0 ; i<10; i++){
@@ -258,7 +285,7 @@ void draw(){
      resumeBtn.hide();
      pauseBtn.show();
      stopBtn.show();
-     
+     addThirtyBtn.show();
      
      int curSecond = second();
      
@@ -304,6 +331,7 @@ ControlP5 clearBtn;
 ControlP5 pauseBtn;
 ControlP5 stopBtn;
 ControlP5 resumeBtn;
+ControlP5 addThirtyBtn;
 Clock myClock = new Clock();
 
 // Stores time the microwave was paused //
