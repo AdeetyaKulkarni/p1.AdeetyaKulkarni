@@ -1,7 +1,163 @@
-<html>
+<html style="background-color: black;">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <head></head>
-    <body>
-        <h1> Hello World </h1>
+    <style>
+        * {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          }
+          li,p{
+              font-size: 16px;
+          }
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    </style>
+    <body style="border:0.09cm solid; background-color: whitesmoke;">
+        <div style="padding-top: 1%;"></div>
+        <div id="main content" style="text-align: center; margin-left: 15%; margin-right: 15%;">
+            <h1><b>CS 4331 Project 1 Submission</b></h1>
+            <h5>Adeetya Kulkarni</h5>
+            <hr style="margin-left:20%; margin-right:20%;">
+        
+            <div id="Part C">
+                <h3><b>Answers for C: </b></h3>
+                <h6>Apartment Microwave design study</h6>
+
+
+                <div class="row" style="margin: 1%; padding: 2%;">
+                
+                        <div class="column" style="float: left; width: 20%;">&nbsp;</div>
+
+                        <div class="column" style="float: left; width: 15%;">
+                            <img src="C:\Users\adeet\Desktop\HCI Project 1\p1.AdeetyaKulkarni\assets\img130.jpg">
+                            <div>
+                                <h5>Interface</h5>
+                            </div>
+                        </div>
+                        
+                    
+
+                        <div class="column" style="float: left; width: 60%;">
+                            <img src="C:\Users\adeet\Desktop\HCI Project 1\p1.AdeetyaKulkarni\assets\workingGif.gif" style="width:60%; height: 71%">
+                            <div>
+                                <h5>Working gif</h5>
+                            </div>
+                        </div>
+
+                        <div class="column" style="float: left; width: 5%;">&nbsp;</div>
+
+                        
+
+                </div>
+
+                <div>
+                    <h3 style="float: none;"><b>Issues with the current interface and why it is bad :</b></h3>
+                    <p>
+                        <ul style="text-align:left; margin-left: 15%; margin-right: 15%;">
+                            <li>Contains 24 non tactile buttons</li>
+                            <li>Ambiguious/Non-intuitive functionality - Baked Potatoes, Dinner Plate, Weight/Time defrost [Does not mention usage of those options]</li>
+                            <li>The "oz" symbol is next to the timer - This can confuse the user regarding what is being calculated</li>
+                            <li>Two similar buttons - Timer & Time cook can misguide the user</li>
+                            <li>Ambiguious/Non-intuitive functionality - Memory </li>
+                            <li>Confusing button labels [Cancel | Clear] & [Start | Add 30 sec] - A double click is not intuitive</li>
+                            <li>Ambiguious labels - Express cook - Dont explain the functionality and how to use it intuitively</li>
+                        </ul> 
+                    </p>
+                </div>
+                
+            </div>
+
+            <hr>
+
+            <div>
+                <h3><b>Answers for B: </b></h3>
+                <h6>Questions regarding microwave interface</h6>
+
+                <ul  style="text-align:left; margin-left: 15%; margin-right: 15%;">
+                    <li><b>List your most common uses and other more rare uses of a microwave. Does the interface make doing those common things easier?</b></li>
+                    <p>
+                        <u>Most common uses</u> : Heating food, Timed cook, Defrost<br>
+                        <u>Least common uses</u> : Easy clean (helps clean the utensils by heating sticky food), 
+                        One touch cooking (For Pizza, Popcorn etc), Weighted sensor cooking (senses the weight of the food item and cooks it)<br>
+                        <br>The interface does not make doing the common things easier - <br>
+                        <ol>
+                            <li>The [Cancel | Clear] and [Start | Add 30 sec] buttons are clubbed together which can confuse the user who is not familier with the UI.</li>
+                            <li>The express cook functionality is vague & non intuitive to the user</li>
+                            <li>The UI has the Timer and Time Cook buttons next to each other which may confuse the user.</li>
+                            <li>The defrost functionality has too many options and it is unclear how each option works.</li>
+                        </ol>
+                    </p>
+
+                    <li><b>Think about how the user interacts with the microwave. What is the common sequence of actions?</b></li>
+                    <p>     
+                        The sequence of user interaction with the microwave takes place as follows - <br>
+                        <ol>
+                            <li>User opens the microwave door, places the food in the center and closes the door</li>
+                            <li>Select the option to execute and press the required button/buttons to start</li>
+                            <li>The microwave starts – This is indicated by the light inside the microwave</li>
+                            <li>Once the task is done microwave provides a feedback (Beeping sound) </li>
+                            <li>User opens the microwave door takes food out and closes the door again.</li>
+                        </ol>
+                    </p>
+
+                    <li><b>How does the microwave support the user figure out how to make it work?</b></li>
+                    <p>
+                        The microwave supports the user as follows - <br>
+                        <ol>
+                            <li><b>Labels</b> - The microwave has labels like "Start" or "Add 30 sec" to specify the functionality</li>
+                            <li><b>Feedback</b> - The microwave provides feedback by lights and sounds so tell the user the end of an action</li>
+                            <li><b>Symbols</b> - Microwave has some symbols like "oz" or a cup symbol to explain what is being measured</li>
+                            <li><b>Digital display</b> - The microwave diplays the selected user action in the digital diplay to make sure the user is doing what they want.</li>
+                        </ol>
+                    </p>
+
+                    <li><b>How does the microwave provide feedback to the user?</b></li>
+                    <p>
+                        <ol>
+                            <li>Light inside the microwave - ON (if door open or something is heating) | OFF (if machine is idle)</li>
+                            <li>Digital display on interface - Displays digits | Labels for certain options</li>
+                            <li>Sound - Buzzer sound to indicate a procedure is done | Sound to indicate button is pressed</li>
+                        </ol>
+                    </p>
+
+                    <li><b>What are some common mistakes you can make with this current design?</b></li>
+                    <p>
+                        <ol>
+                            <li>You might accidentally start express cook when clicked on a button without pressing start.</li>
+                            <li>You might set up a timer instead of timed cook (one is just an alarm, vs one cooks for set amount of time)</li>
+                            <li>Since there is no understanding of how to use power you might accidentally set the power more or less than the one you want.</li>
+                            <li>You can get confused about stop and clear since it is clubbed under one button. If you dont clear after stop, you will not be able to set a new timer the second time.</li>
+                            <li>Accidentally think the digital display is displaying the "oz" and not the timer "seconds".</li>
+                        </ol>
+                    </p>
+
+                    <li><b>Suggest the improvements to make on the control interface</b></li>
+                    <p>
+                        <ol>
+                            <li>Reduce the number of buttons | Reduce irrelevant functionality</li>
+                            <li>Change the Labels and Add some description for using buttons</li>
+                            <li>Add different shaped buttons and different colors to add intuition in usage</li>
+                            <li>Add the units inside the digital display and dynamically change it depending on what is being measured</li>
+                            <li>Seperate functionality to different buttons not club them under one button</li>
+                        </ol>
+                    </p>
+
+                    
+                    <li><b>Low fidelity prototype</b></li><br>
+                    <img src="C:\Users\adeet\Desktop\HCI Project 1\p1.AdeetyaKulkarni\assets\prototype.jpeg" alt="Low fidelity prototype" style="height: 500px; width: 400px; border: solid;"/>
+                    
+                </ul>
+
+            </div>
+
+        </div>
+        
     </body>
 
 </html>
