@@ -5,11 +5,7 @@
 
 ## The interface -  
 
-![image](https://user-images.githubusercontent.com/43662207/109363440-32364180-7852-11eb-8bee-153ca07279a5.png)
-
-![image](https://user-images.githubusercontent.com/43662207/109363553-7de8eb00-7852-11eb-83bd-3c331096c558.png)
-
-![image](https://user-images.githubusercontent.com/43662207/109363525-66116700-7852-11eb-9a01-72a4b0e100c3.png)
+<img width="764" alt="1" src="https://user-images.githubusercontent.com/43662207/109364453-7a566380-7854-11eb-9942-67cf6683ac1f.png">
 
 ## Pros :  
 - Main/Common functionality easily acessible
