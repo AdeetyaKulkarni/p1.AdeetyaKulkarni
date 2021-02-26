@@ -28,7 +28,7 @@
   
 ## Code snippets - 
 - Button : 
-`
+```
 ControlP5 startBtn;
 void setup(){
   //Initialize the button
@@ -36,9 +36,9 @@ void setup(){
   startBtn.addButton("Start").setSize(100,80).setPosition(100, 750).plugTo(this, "startClock").setFont(cf1).setColorBackground(color(0,130,0));
 }
 
-`
+```
 - Page Movement :
-`
+```
 // Movement function for page2
 void movePage2(int direction){
        
@@ -75,10 +75,10 @@ void movePage2(int direction){
 
 }
 
-`
+```
 - Timer : 
 
-`
+```
 int curSecond = second();
            
            // Calculate passedSecs
@@ -117,7 +117,7 @@ int curSecond = second();
              }
            }
 
-`
+```
 
 
 ## How to run - 
