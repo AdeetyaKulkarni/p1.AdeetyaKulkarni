@@ -320,6 +320,7 @@ void defrostInit(){
     backBtn.hide();
     cancelBtn.show();
     defrostStartBtn.show();
+
 }
 
 void defrostStart(){
@@ -498,7 +499,6 @@ void draw(){
    if(myClock.Icon == 0){
        image(img, 415, 75);
    }
-  
    
    
    
@@ -610,6 +610,7 @@ void draw(){
 }
 
 PImage img;
+
 ControlP5[] digitButtons = new ControlP5[10];
 ControlP5 startBtn; 
 ControlP5 clearBtn; 
