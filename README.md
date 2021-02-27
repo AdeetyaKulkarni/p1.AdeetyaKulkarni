@@ -7,7 +7,7 @@ https://youtu.be/FuO-jBvzou4
 
 ## The interface - 
 
-<img width="764" height='300' alt='1' src="https://user-images.githubusercontent.com/43662207/109374334-39714580-787a-11eb-9dd2-f1a6b7d3174b.gif">
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/43662207/109374386-9ff66380-787a-11eb-8b35-1f113bb9899e.gif)
 
 <img width="764" alt="1" src="https://user-images.githubusercontent.com/43662207/109364453-7a566380-7854-11eb-9942-67cf6683ac1f.png">
 
