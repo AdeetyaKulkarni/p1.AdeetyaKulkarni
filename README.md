@@ -20,8 +20,7 @@
 
 ## State diagram of the application :
 
-<img width="669" alt="State diagram" src="https://user-images.githubusercontent.com/43662207/109372363-bdbdcb80-786e-11eb-9db6-39c0817e1698.png">
-
+<img width="669" alt="State diagram" src="https://user-images.githubusercontent.com/43662207/109372747-d29b5e80-7870-11eb-84ff-2f76d6970f61.png">
 
 ## Assets used -  
 - Fonts : digital-7.ttf (To get the digital font which is seen in everyday microwaves)  
